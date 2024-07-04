@@ -1,0 +1,174 @@
+
+.task1 {
+    width: 700px;
+    margin: 32px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+.task1 .container {
+    padding: 20px;
+}
+
+.container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: -15px;
+}
+
+.container .date {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.container .description {
+    font-size: 16px;
+    color: #878787;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.task1 .read-more {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #4a4a4a;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s, color 0.3s;
+}
+
+.task1 .read-more:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.task1 .comments {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.task1 .comments span {
+    font-size: 14px;
+    color: #333;
+}
+
+.task1 .comment-count {
+    background-color: #333;
+    color: #fff;
+    padding: 2px 8px;
+    margin-left: 5px;
+}
+.butonGroub{
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* task2 --------------- */
+.task2 {
+    font-family: Arial, sans-serif;
+    margin: 60px 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.freelancer-section {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.freelancer-content {
+    text-align: left;
+}
+
+.freelancer-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.freelancer-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.read-more {
+    background-color: #ff5e5e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #e04e4e;
+}
+
+.hire {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hire:hover {
+    background-color: #555;
+}
+
+
+
+/* task 3--------------------------------- */
+.task3 {
+  width: 800px;
+  margin: 60px auto;
+  text-align: center;
+}
+.task3 h1 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.task3 p {
+  font-size: 14px;
+  font-family: serif;
+  color: gray;
+}
+.task3 button {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px 32px;
+  font-weight: bold;
+  background-color: #ff5e5e;
+  border: none;
+  color: white;
+  margin-top: px;
+}
