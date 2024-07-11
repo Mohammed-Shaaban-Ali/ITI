@@ -15,73 +15,56 @@ var num = Number(prompt("Enter a Number"));
 fizzBuzz(num);
 
 //======================== Task 2 =============================
-// function reverseString(str) {
-//   return str.split("").reverse().join("");
-// }
-// var textToReverse = prompt("Enter a Text");
-// var reversedResult = reverseString(textToReverse);
-// document.writeln(`<h1>${reversedResult}</h1>`);
+function reverseString(str) {
+  return str.split("").reverse().join("");
+}
+var textToReverse = prompt("Enter a Text");
+var reversedResult = reverseString(textToReverse);
+document.writeln(`<h1>${reversedResult}</h1>`);
 
 //======================== Task 3 =============================
 
-// function getNumbers() {
-//   var sum = 0;
-//   var mult = 1;
-//   var division = 1;
+function getNumbers() {
+  var sum = 0;
+  var mult = 1;
+  var division = 1;
 
-//   for (var i = 0; i < 5; i++) {
-//     var num = Number(prompt(`Enter number ${i + 1}:`));
-//     sum += num;
-//     mult *= num;
-//     division /= num;
-//   }
+  for (var i = 0; i < 5; i++) {
+    var num = Number(prompt(`Enter number ${i + 1}:`));
+    sum += num;
+    mult *= num;
+    division /= num;
+  }
 
-//   document.writeln(`<h2>Sum: ${sum}</h2>`);
-//   document.writeln(`<h2>Product: ${mult}</h2>`);
-//   document.writeln(`<h2>Division: ${division}</h2>`);
-// }
+  document.writeln(`<h2>Sum: ${sum}</h2>`);
+  document.writeln(`<h2>Product: ${mult}</h2>`);
+  document.writeln(`<h2>Division: ${division}</h2>`);
+}
 
-// getNumbers();
+getNumbers();
 
 //======================== Task 4 =============================
-// function countChar(str, char) {
-//   var count = 0;
-//   for (var i = 0; i < str.length; i++) {
-//     if (str[i] === char) {
-//       count++;
-//     }
-//   }
-//   return count;
-// }
-
-// var userString = prompt("Enter a string:");
-// var userChar = prompt("Enter a character:");
-
-// var count = countChar(userString, userChar);
-
-// document.writeln(`<h2>String: ${userString}</h2>`);
-// document.writeln(`<h2>Character: ${userChar}</h2>`);
-// document.writeln(`<h2>Occurrences: ${count}</h2>`);
+s
 
 //======================== Task 5 =============================
-// function findCharIndexs(str, char) {
-//   var indexs = [];
-//   for (var i = 0; i < str.length; i++) {
-//     if (str[i] === char) {
-//       indexs.push(i);
-//     }
-//   }
-//   return indexs;
-// }
+function findCharIndexs(str, char) {
+  var indexs = [];
+  for (var i = 0; i < str.length; i++) {
+    if (str[i] === char) {
+      indexs.push(i);
+    }
+  }
+  return indexs;
+}
 
-// var userString = prompt("Enter a string:");
-// var userChar = prompt("Enter a character:");
+var userString = prompt("Enter a string:");
+var userChar = prompt("Enter a character:");
 
-// var indexs = findCharIndexs(userString, userChar);
+var indexs = findCharIndexs(userString, userChar);
 
-// document.writeln(`<h2>String: <span style="color: red;font-size: 24px;">${userString}</span> </h2>`);
-// document.writeln(
-//   `<h2>The Character <span style="color: red;font-size: 24px;">${userChar}</span>
-//   was repeated <span style="color: red;font-size: 24px;">${indexs.length}</span> times</h2>`
-// );
-// document.writeln(`<h2>indexs: [${indexs.join(", ")}]</h2>`);
+document.writeln(`<h2>String: <span style="color: red;font-size: 24px;">${userString}</span> </h2>`);
+document.writeln(
+  `<h2>The Character <span style="color: red;font-size: 24px;">${userChar}</span>
+  was repeated <span style="color: red;font-size: 24px;">${indexs.length}</span> times</h2>`
+);
+document.writeln(`<h2>indexs: [${indexs.join(", ")}]</h2>`);
