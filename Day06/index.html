@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!--  task1 -->
+    <div class="container">
+        <div class="text">
+            Task 1
+        </div>
+        <div class="task">
+            <div class="form-row">
+                <div class="input-data">
+                    <input id="bgColorInput" type="text" placeholder="Background Color" required>
+                    <div class="underline"></div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="input-data">
+                    <input id="textInput" type="text" placeholder="Text" required>
+                    <div class="underline"></div>
+                </div>
+            </div>
+            <button class="button" onclick="applyChanges()">Apply</button>
+            <p id="output1"></p>
+        </div>
+    </div>
+
+    <!-- task2 -->
+    <div class="container">
+        <div class="text">
+            Task 2
+        </div>
+        <div class="task">
+            <div class="form-row">
+                <div class="input-data">
+                    <input type="number" id="number1" placeholder="Enter first number">
+                    <div class="underline"></div>
+                </div>
+                <div class="input-data">
+                    <input type="number" id="number2" placeholder="Enter second number">
+                    <div class="underline"></div>
+                </div>
+            </div>
+            <div class="task2-resut">
+                <div class="">
+                    <button class="button" onclick="addNumbers()">Add</button>
+                    <p id="outputSum"></p>
+
+                </div>
+                <div class="">
+                    <button class="button" onclick="multiplyNumbers()">Multiply</button>
+                    <p id="outputMul"></p>
+
+                </div>
+            </div>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- js -->
+    <script src="script.js"></script>
+</body>
+
+</html>
