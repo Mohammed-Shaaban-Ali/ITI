@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 7</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- task 1 -->
+
+    <div class="container">
+
+        <h1>Task 1</h1>
+
+        <div class="image">
+            <img id="image" src="images/1.jpg" alt="Image">
+        </div>
+
+        <div class="but_group">
+            <button id="prv" onclick="prv()">prev</button>
+            <button id="next" onclick="next()">next</button>
+        </div>
+    </div>
+
+
+    <hr>
+
+    <!-- task 2 -->
+    <div class="container">
+        
+        <h1>Task 2</h1>
+       
+        <div class="dataInput">
+            
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <p id="error_name"></p>
+            </div>
+            
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                <p id="error_age"></p>
+            </div>
+
+        </div>
+
+        <button class="add_data" onclick="addData()">Add Data</button>
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
