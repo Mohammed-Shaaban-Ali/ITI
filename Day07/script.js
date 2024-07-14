@@ -6,12 +6,13 @@ const images = [
   "images/3.jpeg",
   "images/4.webp",
 ];
-
+// 0
+// 3
 var imageCount = 0;
 
 function next() {
   imageCount == images.length - 1 ? (imageCount = 0) : imageCount++;
-
+  // imageCount++;
   document.getElementById("image").src = images[imageCount];
 }
 function prv() {
@@ -30,8 +31,8 @@ function addData() {
   var pName = document.getElementById("error_name");
   var pAge = document.getElementById("error_age");
 
-  pName.innerHTML = "";
-  pAge.innerHTML = "";
+  // pName.innerHTML = "";
+  // pAge.innerHTML = "";
 
   if (!name) {
     pName.innerHTML = "Please enter a name";
@@ -40,12 +41,15 @@ function addData() {
   } else if (!age) {
     pAge.innerHTML = "Please enter an age";
   } else {
+    
     const data = {
       id: idCounter,
       name: name,
       age: parseInt(age),
     };
+
     idCounter++;
+
     displayData(data);
     document.getElementById("name").value = "";
     document.getElementById("age").value = "";
@@ -58,6 +62,7 @@ function displayData(data) {
   var newRow = document.createElement("tr");
 
   var cellId = document.createElement("td");
+
   cellId.innerText = data.id;
 
   var cellName = document.createElement("td");
@@ -76,3 +81,5 @@ function displayData(data) {
 
   tableBody.appendChild(newRow);
 }
+
+

@@ -1,9 +1,11 @@
 function applyChanges() {
     var bgColor = document.getElementById('bgColorInput').value;
     var text = document.getElementById('textInput').value;
+
     var output = document.getElementById('output1');
 
     output.style.backgroundColor = bgColor;
+    
     output.innerText = text;
 }
 
