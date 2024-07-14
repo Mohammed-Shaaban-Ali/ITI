@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 8</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- task 1 -->
+    <div class="container">
+        <h1>Task 1</h1>
+        <div class="btn">
+            <button id="errorBtn" onclick="errMessage()">Error Alert</button>
+            <button id="successBtn" onclick="success()">Success Alert</button>
+        </div>
+        <div id="message" ></div>
+    </div>
+    <hr>
+    <div class="container">
+        <h1>Task 2</h1>
+
+        <div id="traffic-light">
+            <div class="light" id="red"></div>
+            <div class="light" id="yellow"></div>
+            <div class="light" id="green"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+
+        <h1>Task 3</h1>
+
+        <div class="image">
+            <img id="image" src="images/1.jpg" alt="Image">
+        </div>
+
+        <div class="but_group">
+            <button id="prv" onclick="prv()">prev</button>
+            <button id="next" onclick="next()">next</button>
+        </div>
+        <div class="but_group">
+            <button onclick="play()">Play</button>
+            <button onclick="stop()">Stop</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
