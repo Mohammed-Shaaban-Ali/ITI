@@ -1,4 +1,3 @@
-
 function getAllUsers() {
   var xhr = new XMLHttpRequest();
   xhr.open("GET", "https://jsonplaceholder.typicode.com/users");
@@ -53,8 +52,9 @@ function twoParameters(param1, param2) {
     if (arguments.length !== 2) {
       throw "Function accepted 2 parameters only";
     }
-    console.log(param1, param2);
-
+    console.log("The First argument: " + param1);
+    console.log("The sec argument: " + param2);
+    console.log("-----------------");
   } catch (error) {
     console.log(error);
   }
