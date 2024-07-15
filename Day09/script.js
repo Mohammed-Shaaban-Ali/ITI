@@ -52,15 +52,15 @@ function twoParameters(param1, param2) {
     if (arguments.length !== 2) {
       throw "Function accepted 2 parameters only";
     }
-    console.log("The First argument: " + param1);
-    console.log("The sec argument: " + param2);
-    console.log("-----------------");
+    console.log("The First argument: " + param1+ " and The sec argument: " + param2);
   } catch (error) {
     console.log(error);
   }
 }
 twoParameters(1, 2);
+ 
 twoParameters(1);
+ 
 twoParameters(1, 2, 3);
 
 // -----------------------------------
@@ -81,7 +81,9 @@ function sumNumbers() {
 }
 
 sumNumbers(1, 2);
+ 
 sumNumbers(2, 3, 4, 5);
+ 
 sumNumbers(2, "test");
 
 // -----------------------------------
@@ -96,4 +98,5 @@ function reverseParams() {
 }
 
 console.log(reverseParams(1, 2, 3));
+ 
 console.log(reverseParams("test1", "test2", "test3"));
