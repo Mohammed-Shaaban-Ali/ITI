@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 11</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oldenburg&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <!-- task 1 -->
+      <div class="container">
+        <h2>Task 1</h2>
+        <svg width="400" height="600" xmlns="http://www.w3.org/2000/svg">
+          <!-- Rounded rectangle border -->
+          <rect
+            x="20"
+            y="20"
+            rx="30"
+            ry="30"
+            width="360"
+            height="500"
+            fill="none"
+            stroke="red"
+            stroke-width="5"
+          />
+
+          <!-- Top left 'A' -->
+          <text
+            x="50"
+            y="90"
+            font-family="Oldenburg"
+            font-size="50"
+            style="font-weight: 700"
+            fill="black"
+          >
+            A
+          </text>
+
+          <!-- Bottom right 'A' rotated -->
+          <text
+            x="305"
+            y="625"
+            font-family="Oldenburg"
+            font-size="50"
+            style="font-weight: 700"
+            fill="black"
+            transform="rotate(180 320,540)"
+          >
+            A
+          </text>
+
+          <path
+            d="M 100 180 L 20 80 C 20 80 60 15 100 80"
+            transform="translate(100, 150) rotate(180, 100, 100)"
+            stroke="black"
+          />
+          <path
+            d="M 100 180 180 80 C 180 80 140 15 100 80"
+            transform="translate(100, 150) rotate(180, 100, 100)"
+            stroke="black"
+          />
+          <path d="M 150 350 L 250 350 L 200 250 Z"  />
+
+        </svg>
+      </div>
+
+      <!-- task 2 -->
+      <div class="container">
+        <h2>Task 2</h2>
+        <input type="color" id="inputColor" />
+        <button class="btn-hover" id="generateCircles">Click Me</button>
+        <canvas
+          id="canvas"
+          width="800"
+          height="600"
+          style="border: 1px solid #000000; background-color: white"
+        ></canvas>
+      </div>
+
+      <!-- task 3 -->
+      <div class="container">
+        <h2>Task 3</h2>
+        <div class="image imageAnimation">
+          <img src="images/banner-img-1.png" alt="banner" />
+        </div>
+      </div>
+
+      <!-- task 4 -->
+      <div class="container">
+        <h2>Task 4</h2>
+        <button class="btn-hover">Hover To Bink</button>
+      </div>
+
+      <!-- task 5 -->
+      <div class="container">
+        <h2>Task 5</h2>
+        <div class="card">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

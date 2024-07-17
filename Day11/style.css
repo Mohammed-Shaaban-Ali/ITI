@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Poppins", sans-serif; */
+}
+
+body {
+  background: conic-gradient(from 116.56deg at calc(100% / 3) 0,
+      #0000 90deg,
+      #f5f5ff 0),
+    conic-gradient(from -63.44deg at calc(200% / 3) 100%,
+      #0000 90deg,
+      #f5f5ff 0) #3badff19;
+  background-size: 26px 26px;
+}
+
+main {
+  width: 80vw;
+  margin: auto;
+}
+
+h2 {
+  font-size: 44px;
+  font-weight: 800;
+}
+
+.container {
+  min-height: 100vh;
+  padding: 32px;
+  border-bottom: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+
+
+/* task3 */
+.image {
+  width: 300px;
+}
+
+.image img {
+  width: 100%;
+}
+.image img:hover{
+  opacity: 0;
+  animation: changeBackgroundColor 3s linear ;
+
+}
+@keyframes changeBackgroundColor {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 0.1;
+  }
+}
+
+/* task4 */
+.btn-hover {
+  padding: 12px 64px;
+  border: 2px solid rgb(0, 107, 195);
+  border-radius: 24px;
+  background-color: rgb(178, 215, 246);
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-hover:hover {
+  background-color: rgb(254, 216, 222);
+  animation: changeshadow 3s linear infinite;
+  box-shadow: 0px 0px 20px rgb(206, 8, 255);
+
+}
+@keyframes changeshadow{
+  0% {
+    box-shadow: 0px 0px 20px rgb(206, 8, 255);
+
+  }
+  25% {
+    box-shadow: 0px 0px 20px rgb(41, 187, 255);
+
+  }
+  50% {
+    box-shadow: 0px 0px 20px rgb(51, 255, 0);
+  }
+  75% {
+    box-shadow: 0px 0px 20px rgb(89, 0, 255);
+  }
+  75% {
+    box-shadow: 0px 0px 20px rgb(255, 0, 119);
+  }
+}
+/* task 5 */
+.card {
+  width: 600px;
+  height: 400px;
+  background-color: #d2f8d2;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: #ffc0cb;
+  border: 2px solid #000;
+  animation: changeCircle 3s linear infinite;
+
+}
+@keyframes changeCircle {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(40px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-40px);
+  }
+}
