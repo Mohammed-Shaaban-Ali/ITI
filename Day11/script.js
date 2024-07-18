@@ -14,7 +14,6 @@ btn.addEventListener("click", () => {
       context.fillStyle = "white";
       context.fillRect(0, 0, 800, 600);
       localStorage.color = color;
-
     }
   } else {
     localStorage.color = color;
@@ -25,10 +24,9 @@ btn.addEventListener("click", () => {
   for (let i = 0; i < numCircles; i++) {
     var x = Math.random() * 800;
     var y = Math.random() * 600;
-    var radius = Math.random() * 20 + 10;
 
     context.beginPath();
-    context.arc(x, y, radius, 0, Math.PI * 2, false);
+    context.arc(x, y, 20, 0, Math.PI * 2, false);
     context.stroke();
   }
 });

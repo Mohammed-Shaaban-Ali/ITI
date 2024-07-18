@@ -48,7 +48,8 @@ h2 {
 }
 .image img:hover{
   opacity: 0;
-  animation: changeBackgroundColor 3s linear ;
+  cursor: pointer;
+  animation: changeBackgroundColor 2s linear ;
 
 }
 @keyframes changeBackgroundColor {
@@ -60,8 +61,11 @@ h2 {
     opacity: 0.5;
   }
 
-  100% {
+  90% {
     opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
