@@ -6,12 +6,6 @@
 }
 
 body {
-  background: conic-gradient(from 116.56deg at calc(100% / 3) 0,
-      #0000 90deg,
-      #f5f5ff 0),
-    conic-gradient(from -63.44deg at calc(200% / 3) 100%,
-      #0000 90deg,
-      #f5f5ff 0) #3badff19;
   background-size: 26px 26px;
 }
 
@@ -47,7 +41,6 @@ h2 {
   width: 100%;
 }
 .image img:hover{
-  opacity: 0;
   cursor: pointer;
   animation: changeBackgroundColor 2s linear ;
 
@@ -84,7 +77,6 @@ h2 {
 .btn-hover:hover {
   background-color: rgb(254, 216, 222);
   animation: changeshadow 3s linear infinite;
-  box-shadow: 0px 0px 20px rgb(206, 8, 255);
 
 }
 @keyframes changeshadow{
@@ -102,7 +94,7 @@ h2 {
   75% {
     box-shadow: 0px 0px 20px rgb(89, 0, 255);
   }
-  75% {
+  100% {
     box-shadow: 0px 0px 20px rgb(255, 0, 119);
   }
 }
@@ -123,7 +115,6 @@ h2 {
   background-color: #ffc0cb;
   border: 2px solid #000;
   animation: changeCircle 3s linear infinite;
-
 }
 @keyframes changeCircle {
   0% {

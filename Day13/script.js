@@ -61,7 +61,7 @@ class Circle extends Shape {
   }
 
   area() {
-    return Math.PI * this.radius * this.radius;
+   return Math.PI * this.radius * this.radius;
   }
 
   perimeter() {
